@@ -36,7 +36,7 @@ Tested on macOS 15.8 Sequoia (24H23), OpenCore 1.0.7, Lilu 1.7.2, BlueToolFixup 
   &nbsp;
   <img src="Docs/sound-output.png" alt="Sound menu: JBL Tune Buds 2 selected as the sound output" height="360">
 </p>
-<p align="center"><sub>macOS 15.8 (Portuguese UI) with the UGREEN dongle: JBL Tune Buds 2 connected, with battery level (left), and selected as the sound output (right).</sub></p>
+<p align="center"><sub>macOS 15.8 (Portuguese UI) with the UGREEN dongle: JBL Tune Buds 2 connected in System Settings, with its battery level, and selected as the sound output.</sub></p>
 
 ## Requirements
 
