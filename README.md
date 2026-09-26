@@ -31,6 +31,13 @@ Tested on macOS 15.8 Sequoia (24H23), OpenCore 1.0.7, Lilu 1.7.2, BlueToolFixup 
 | Plugging the dongle while macOS is running | ⬜ Untested |
 | AirDrop, Handoff and other Continuity features | ❌ Not possible: they need Apple (Broadcom) hardware |
 
+<p align="center">
+  <img src="Docs/bluetooth-settings.png" alt="System Settings › Bluetooth: JBL Tune Buds 2 connected through the UGREEN dongle" height="360">
+  &nbsp;
+  <img src="Docs/sound-output.png" alt="Sound menu: JBL Tune Buds 2 selected as the sound output" height="360">
+</p>
+<p align="center"><sub>macOS 15.8 (Portuguese UI) with the UGREEN dongle: JBL Tune Buds 2 connected, with battery level (left), and selected as the sound output (right).</sub></p>
+
 ## Requirements
 
 - macOS 12 Monterey or newer (x86_64). Since Monterey, the Bluetooth stack runs in userspace (`bluetoothd`), which is why BlueToolFixup is needed.
