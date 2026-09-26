@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and verify the Realtek firmware
+        run: make firmware
+
+      - name: Build the kext
+        run: make
+
+      - name: Build the test tool
+        run: make tool
+
+      - name: Package
+        run: make dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RTL8761BTFirmware
+          path: build/*-RELEASE.zip
